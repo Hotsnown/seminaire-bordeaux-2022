@@ -57,6 +57,7 @@ def est_bissextile(year):
         return "Normal"
 
 années = [
+    Args(2000),
     Args(2016),
     Args(2017),
     Args(2018),
@@ -66,6 +67,8 @@ années = [
     Args(2022),
     Args(2023),
     Args(2024),
+    Args(2100),
+    Args(2400),
 ]
 
 exo_est_bissextile = ExerciseFunction(
