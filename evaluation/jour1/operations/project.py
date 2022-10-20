@@ -10,8 +10,9 @@ def tva(prix_brut, produit, quantité):
 # @END@
 
 tva_arguments = [
-    Args(200, 0.2, 4),
-    Args(1000, 0.05, 2)
+    Args(200, "jouets", 4),
+    Args(1000, "électricité", 2),
+    Args(2000,  "alimentaire", 10)
     ]
 
 exo_tva = ExerciseFunction(
