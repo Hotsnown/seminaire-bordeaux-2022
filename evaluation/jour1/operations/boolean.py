@@ -3,7 +3,7 @@ from nbautoeval import CallRenderer, PPrintRenderer
 
 # @BEG@ name=divide
 def est_positif(x):    
-    return num > 0:
+    return x > 0
 # @END@
 
 chiffres = [
@@ -14,14 +14,17 @@ chiffres = [
     Args(1000)
 ]
 
-exo_divide = ExerciseFunction(
+exo_est_positif = ExerciseFunction(
     est_positif,
     chiffres,
     result_renderer=PPrintRenderer(width=20),
 )
 
 def est_pair(x):
-    return (num % 2) == 0:
+    if (x % 2) == 0:
+        return "Pair"
+    else:
+        return "Impair"
 
 chiffres = [
     Args(-4),
@@ -42,13 +45,13 @@ def est_bissextile(year):
     if (year % 4) == 0:
         if (year % 100) == 0:
             if (year % 400) == 0:
-                print("{0} est une année bissextile".format(year))
+                return "Bissextile"
             else:
-                print("{0} n'est pas une année bissextile".format(year))
+                return "Normal"
         else:
-            print("{0} est une année bissextile".format(year))
+            return "Bissextile"
     else:
-        print("{0} n'est pas une année bissextile".format(year))
+        return "Normal"
 
 années = [
     Args(2016),
@@ -61,3 +64,8 @@ années = [
     Args(2023),
     Args(2024),
 ]
+
+exo_est_bissextile = ExerciseFunction(
+    est_bissextile,
+    années
+)

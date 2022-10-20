@@ -21,15 +21,6 @@ exo_apostrophe_dans_string = ExerciseFunction(
     operands
     )
 
-def string_multi_ligne():
-    return """Ce string a été écrit sur plusieurs lignes,
-      et il s'affiche sur plusieurs lignes"""
-
-exo_string_multi_ligne = ExerciseFunction(
-    string_multi_ligne,
-    operands
-    )
-
 # @BEG@ name=percentages
 def concat():    
     return "Hello World"
