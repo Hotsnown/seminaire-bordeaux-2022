@@ -2,7 +2,10 @@ from nbautoeval import ExerciseFunction, Args
 from nbautoeval import CallRenderer, PPrintRenderer
 
 # @BEG@ name=tva
-def tva(prix_brut, taux_tva, quantité):    
+def tva(prix_brut, produit, quantité):
+    taux_tva = 0.20
+    if produit == "électricité" or produit == "hébergement": taux_tva = 0.10
+    if produit == "alimentaire": taux_tva = 0.055
     return (prix_brut * taux_tva) * quantité
 # @END@
 
@@ -18,8 +21,8 @@ exo_tva = ExerciseFunction(
 )
 
 # @BEG@ name=tva
-def dévolution(actif, passif, nombre_descendants, quotité_disponible):    
-    return ((actif - passif) * quotité_disponible) / nombre_descendants
+def dévolution(actif, passif, nombre_descendants, libéralités):    
+    return ((actif - passif) - libéralités) / nombre_descendants
 # @END@
 
 dévolution_arguments = [
@@ -29,20 +32,5 @@ dévolution_arguments = [
 exo_dévolution = ExerciseFunction(
     dévolution,
     dévolution_arguments,
-    result_renderer=PPrintRenderer(width=20),
-)
-
-# @BEG@ name=tva
-def remise(prix, quantité, taux_remise, retenus):    
-    return ((prix * taux_remise) * quantité) - retenus
-# @END@
-
-remise_arguments = [
-    
-    ]
-
-exo_remise = ExerciseFunction(
-    remise,
-    tva_arguments,
     result_renderer=PPrintRenderer(width=20),
 )

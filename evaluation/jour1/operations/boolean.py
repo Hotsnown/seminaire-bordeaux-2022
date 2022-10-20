@@ -2,8 +2,11 @@ from nbautoeval import ExerciseFunction, Args
 from nbautoeval import CallRenderer, PPrintRenderer
 
 # @BEG@ name=divide
-def est_positif(x):    
-    return x > 0
+def est_positif(x):  
+    if x > 0:
+        return "Positif"
+    else:
+        return "Négatif"
 # @END@
 
 chiffres = [

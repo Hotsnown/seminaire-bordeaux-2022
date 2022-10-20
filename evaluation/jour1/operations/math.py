@@ -81,7 +81,7 @@ exo_convertir_celsius_vers_fahrenheit = ExerciseFunction(
 # @BEG@ name=divide
 def convertir_kilomètre_vers_miles(km):    
     conv_fac = 0.621371
-    return kilometers * conv_fac
+    return km * conv_fac
 # @END@
 
 kms = [
