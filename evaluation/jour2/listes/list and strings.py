@@ -1,0 +1,7 @@
+exo_liste_vers_string
+
+exo_liste_vers_string_avec_espaces
+
+liste_vers_string_avec_espaces
+
+liste_vers_string_avec_retour_ligne

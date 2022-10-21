@@ -120,6 +120,25 @@ exo_first_last = ExerciseFunction(
 
 ## LOOPING OVER LIST
 
+def trois_existe_dans_liste(liste):
+    for x in liste:
+        if x == 3:
+            return True
+    return False
+
+listes = [
+    Args([1, 6, 3, 5, 3, 4]),
+    Args([2, 4, 6, 8, 10, 12]),
+    Args([1, 3, 5, 7, 9, 11]),
+    Args([-1, -6, -3, -5, -3, -4]),
+    Args([3, 5, 3, 9, 3, 4])
+]
+
+exo_trois_existe_dans_liste = ExerciseFunction(
+    trois_existe_dans_liste,
+    listes
+)
+
 def less_than_5(list):
     ret = []
     for i in list:

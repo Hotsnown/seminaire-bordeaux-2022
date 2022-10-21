@@ -22,6 +22,18 @@ exo_remove_ponctuation = ExerciseFunction(
     strings,
 )
 
+def inverser_string(string):
+    return reversed(string)
+
+strings = [
+    Args("Hello World!")
+]
+
+exo_inverser_string = ExerciseFunction(
+    inverser_string,
+    strings
+)
+
 def est_palindrome(string):
     # make it suitable for caseless comparison
     string = string.casefold()
