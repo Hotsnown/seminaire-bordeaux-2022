@@ -22,11 +22,35 @@ exo_remove_ponctuation = ExerciseFunction(
     strings,
 )
 
+def remove_emojis(string):
+
+    emojis = "⛔👮🚫🎮🚣🏻⛽😤👐⛵👉😎👈🤔🤷👊📝📓🙉👀👗🤔💭👋🏽⏳😜👣🔖💪😩🐝🐝😈🎉👰🤵🚫🥖😂👵🔞"
+   
+    no_emojis = ""
+    for char in string:
+        if char not in emojis:
+            no_emojis = no_emojis + char
+
+    return no_emojis
+
+strings = [
+    Args("La loi ⛔👮 régit l'association conjugale, en ce qui concerne les biens, 🚫🎮🚣🏻⛽ seulement 😤👐 en ⛵⛵🇺🇸 l'absence de conventions spéciales 👉😎👈 que 🤔 les époux peuvent 🤷 faire 👊📝📓 comme ils 🙉 le jugent 👀 opportun, 👗 à condition 🤔💭 que 👋 elles 🏽 ne soient pas ⏳ contraires aux bonnes 😜 mœurs ou aux dispositions suivantes 👣."),
+    Args("Le prix 🔖 de la vente doit 💪😩 être 🐝🐝 déterminé et désigné par 😈 les parties. 🎉"),
+    Args("Le mariage 👰🤵 ne peut 🚫 être 🥖 contracté avant 😂 l'âge 👵 de dix-huit ans révolus. 🔞")
+]
+
+exo_remove_emojis = ExerciseFunction(
+    remove_emojis,
+    strings,
+)
+
 def inverser_string(string):
     return reversed(string)
 
 strings = [
-    Args("Hello World!")
+    Args("Accessorium sequitur principale."),
+    Args("Affirmanti incumbit probatio."),
+    Args("Non bis in idem."),
 ]
 
 exo_inverser_string = ExerciseFunction(
@@ -48,7 +72,34 @@ def est_palindrome(string):
         False
 
 strings = [
-    Args("aIbohPhoBiA"),
+    Args("reifier"),
+    Args("shahs"),
+    Args("pyramide"),
+    Args("horizon"),
+    Args("essayasse"),
+    Args("coffre"),
+    Args("fugace"),
+    Args("solos"),
+    Args("été"),
+    Args("kayak"),
+    Args("antarctique"),
+    Args("louer"),
+    Args("gag"),
+    Args("rythme"),
+    Args("selles"),
+    Args("radar"),
+    Args("ana"),
+    Args("stats"),
+    Args("tôt"),
+    Args("coloc"),
+    Args("verdure"),
+    Args("snobons"),
+    Args("narine"),
+    Args("elle"),
+    Args("brouette"),
+    Args("aviva"),
+    Args("sexes"),
+    Args("pep"),
 ]
 
 exo_palindrome = ExerciseFunction(
