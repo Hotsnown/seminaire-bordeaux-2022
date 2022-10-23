@@ -2,6 +2,80 @@ from nbautoeval import ExerciseFunction, Args
 from nbautoeval import CallRenderer, PPrintRenderer
 import random
 
+#String as lists
+
+def première_lettre(string):
+    return string[0]
+
+première_lettre_arguments = [
+    Args("Demandeur"),Args("Défendeur"),Args("Partie"),Args("Ministère public (parquet)"),Args("Tiers"),Args("Juge"),Args("Avocat"),Args("Greffier"),Args("Arbitre"),Args("Médiateur"),Args("Procureur")
+]
+
+exo_première_lettre = ExerciceFunction(
+    première_lettre,
+    première_lettre_arguments
+)
+
+def indexe_string(string, k):
+    return string[k]
+
+indexe_string_arguments = [
+    Args("Demandeur", 0),Args("Défendeur", 1),Args("Partie", 2),Args("Ministère public (parquet)", 3),Args("Tiers", 4),Args("Juge", 5),Args("Avocat", 6),Args("Greffier", 7),Args("Arbitre", 8),Args("Médiateur", 9),Args("Procureur", 10)
+]
+
+exo_indexe_string = ExerciceFunction(
+    indexe_string,
+    indexe_string_arguments
+)
+
+def longueur_string(string):
+    return len(string)
+
+longueur_string_arguments = [
+    Args("Demandeur"),Args("Défendeur"),Args("Partie"),Args("Ministère public (parquet)"),Args("Tiers"),Args("Juge"),Args("Avocat"),Args("Greffier"),Args("Arbitre"),Args("Médiateur"),Args("Procureur")
+]
+
+exo_longueur_string = ExerciceFunction(
+    longueur_string,
+    longueur_string_arguments
+)
+
+def loop_over_string(string, fonction):
+    ret = []
+    for letter in string:
+        ret.append(fonction(letter))
+    return ret
+
+loop_over_string_arguments = [
+    Args("Demandeur", isalpha),Args("Défendeur", isdigit),Args("Partie", isalpha),Args("Ministère public (parquet)", isspace),Args("Tiers", isupper),Args("Juge", isupper),Args("Avocat", islower),Args("Greffier", islower),Args("Arbitre", isalnum),Args("Médiateur", isalnum),Args("Procureur", isupper)
+]
+
+exo_loop_over_string = ExerciceFunction(
+    loop_over_string,
+    loop_over_string_arguments
+)
+
+def in_operator(string, mots):
+    return string in mots
+
+in_operator_arguments = [
+    Args("Cour de cassation",  ["Demandeur","Défendeur","Partie","Ministère public (parquet)","Tiers","Juge","Avocat","Arbitre","Médiateur","Procureur","Greffier"]),
+    Args("Conseil constitutionnel",  ["Demandeur","Défendeur","Partie","Ministère public (parquet)","Tiers","Juge","Avocat","Arbitre","Médiateur","Procureur","Greffier"]),
+    Args("Demandeur",  ["Demandeur","Défendeur","Partie","Ministère public (parquet)","Tiers","Juge","Avocat","Arbitre","Médiateur","Procureur","Greffier"]),
+    Args("Tribunal",  ["Demandeur","Défendeur","Partie","Ministère public (parquet)","Tiers","Juge","Avocat","Arbitre","Médiateur","Procureur","Greffier"]),
+    Args("Défendeur",  ["Demandeur","Défendeur","Partie","Ministère public (parquet)","Tiers","Juge","Avocat","Arbitre","Médiateur","Procureur","Greffier"]),
+    Args("Conseil d'État",  ["Demandeur","Défendeur","Partie","Ministère public (parquet)","Tiers","Juge","Avocat","Arbitre","Médiateur","Procureur","Greffier"]),
+    Args("Partie",  ["Demandeur","Défendeur","Partie","Ministère public (parquet)","Tiers","Juge","Avocat","Arbitre","Médiateur","Procureur","Greffier"]),
+    Args("Ministère public (parquet)",  ["Demandeur","Défendeur","Partie","Ministère public (parquet)","Tiers","Juge","Avocat","Arbitre","Médiateur","Procureur","Greffier"]),
+    Args("Tiers",  ["Demandeur","Défendeur","Partie","Ministère public (parquet)","Tiers","Juge","Avocat","Arbitre","Médiateur","Procureur","Greffier"]),
+    Args("Cour d'appel",  ["Demandeur","Défendeur","Partie","Ministère public (parquet)","Tiers","Juge","Avocat","Arbitre","Médiateur","Procureur","Greffier"]),
+]
+
+exo_in_operator = ExerciceFunction(
+    in_operator,
+    in_operator_arguments
+)
+
 #Split
 
 def split_espace(text):
