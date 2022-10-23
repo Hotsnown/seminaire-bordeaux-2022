@@ -7,14 +7,34 @@ import random
 def create_list(*args):
     return args
 
-arguments = [
+arguments_3 = [
     Args("a", "b", "c"),
-    Args('Call', 'me', 'Ishmael', '.')
+    Args(1, 2, 3)
 ]
 
-exo_create_list = ExerciseFunction(
+exo_create_list_3 = ExerciseFunction(
     create_list,
-    arguments,
+    arguments_3,
+)
+
+arguments_4 = [
+    Args("a", "b", "c", "d"),
+    Args(1, 2, 3, 4)
+]
+
+exo_create_list_4 = ExerciseFunction(
+    create_list,
+    arguments_4,
+)
+
+arguments_5 = [
+    Args("a", "b", "c", "d", "e"),
+    Args(1, 2, 3, 4, 5)
+]
+
+exo_create_list_5 = ExerciseFunction(
+    create_list,
+    arguments_5,
 )
 
 # ADD LIST
@@ -150,7 +170,7 @@ input_list = [
     Args([1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]),
 ]
 
-exo_less_than_5 = exo_lenght = ExerciseFunction(
+exo_less_than_5 = ExerciseFunction(
     less_than_5,
     input_list,
 )
