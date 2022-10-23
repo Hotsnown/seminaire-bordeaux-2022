@@ -1,4 +1,9 @@
 
+from nbautoeval import ExerciseFunction, Args
+from nbautoeval import CallRenderer, PPrintRenderer
+import random
+
+
 def est_chiffre(string):
     return string.isdigit()
 
