@@ -13,7 +13,7 @@ arguments = [
     Args(4),
 ]
 
-exo_plus_deux = ExerciceFunction(
+exo_plus_deux = ExerciseFunction(
     plus_deux,
     arguments
 )
@@ -31,7 +31,7 @@ est_chiffre_arguments=[
 
 ]
 
-exo_est_chiffre = ExerciceFunction(
+exo_est_chiffre = ExerciseFunction(
     est_chiffre,
     est_chiffre_arguments
 )
