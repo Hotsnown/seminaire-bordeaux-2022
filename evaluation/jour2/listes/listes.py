@@ -1,5 +1,6 @@
 from nbautoeval import ExerciseFunction, Args
 from nbautoeval import CallRenderer, PPrintRenderer
+import random
 
 # CREATE LIST
 
