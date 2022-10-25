@@ -14,7 +14,7 @@ def remove_punct(string):
     return no_punct
 
 strings = [
-    Args("Hello!!!, how are you? -Hope doing well.")
+    Args("Bonjour ! !!, comment allez-vous ? -J'espère que ça va bien.")
 ]
 
 exo_remove_ponctuation = ExerciseFunction(
@@ -45,7 +45,7 @@ exo_remove_emojis = ExerciseFunction(
 )
 
 def inverser_string(string):
-    return reversed(string)
+    return "".join(reversed(string))
 
 strings = [
     Args("Accessorium sequitur principale."),
@@ -69,7 +69,7 @@ def est_palindrome(string):
     if list(string) == list(rev_str):
         return True
     else:
-        False
+        return False
 
 strings = [
     Args("reifier"),

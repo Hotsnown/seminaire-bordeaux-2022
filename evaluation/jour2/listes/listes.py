@@ -1,6 +1,5 @@
 from nbautoeval import ExerciseFunction, Args
 from nbautoeval import CallRenderer, PPrintRenderer
-import random
 
 # CREATE LIST
 
@@ -40,7 +39,10 @@ exo_create_list_5 = ExerciseFunction(
 # ADD LIST
 
 def add_list(list, x):
-    return list.append(x)
+    liste.append(x)
+
+    # Ne rien changer après cette ligne
+    return liste
 
 arguments = [
     Args(["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre"], "décembre")
@@ -90,7 +92,7 @@ arguments = [
     Args(["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 12),
 ]
 
-exo_lenght = ExerciseFunction(
+exo_get_item = ExerciseFunction(
     get_item,
     arguments,
 )
@@ -104,7 +106,7 @@ def select_second(L):
 
 arguments = [
     Args(["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 1),
-    Args([])
+    Args([0, 1, 2, 3, 4])
 ]
 
 exo_select_second = ExerciseFunction(
@@ -121,7 +123,7 @@ arguments = [
     Args(random.shuffle(["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]))
 ]
 
-exo_lenght = ExerciseFunction(
+exo_get_lastitem = ExerciseFunction(
     get_lastitem,
     arguments,
 )
@@ -134,7 +136,7 @@ arguments = [
 ]
 
 exo_first_last = ExerciseFunction(
-    get_lastitem,
+    first_last,
     arguments,
 )
 
