@@ -3,9 +3,9 @@ from nbautoeval import CallRenderer, PPrintRenderer
 
 # @BEG@ name=tva
 def tva(prix_brut, produit, quantité):
-    taux_tva = 0.20
-    if produit == "électricité" or produit == "hébergement": taux_tva = 0.10
-    if produit == "alimentaire": taux_tva = 0.055
+    taux_tva = 1.20
+    if produit == "électricité" or produit == "hébergement": taux_tva = 1.10
+    if produit == "alimentaire": taux_tva = 1.055
     return (prix_brut * taux_tva) * quantité
 # @END@
 

@@ -7,7 +7,12 @@ def multiply(x, y):
 # @END@
 
 operands = [
-    Args(),
+    Args(2, 2),
+    Args(1, 3),
+    Args(5, 2),
+    Args(8, 10),
+    Args(10, 9),
+    Args(0, -1),
 ]
 
 exo_multiply = ExerciseFunction(
@@ -22,7 +27,12 @@ def divide(x, y):
 # @END@
 
 operands = [
-    Args(),
+    Args(2, 2),
+    Args(1, 3),
+    Args(5, 2),
+    Args(8, 10),
+    Args(10, 9),
+    Args(0, -1),
 ]
 
 exo_divide = ExerciseFunction(
@@ -38,7 +48,12 @@ def addition(x, y):
 # @END@
 
 operands = [
-    Args(),
+    Args(2, 2),
+    Args(1, 3),
+    Args(5, 2),
+    Args(8, 10),
+    Args(10, 9),
+    Args(0, -1),
 ]
 
 exo_addition = ExerciseFunction(
@@ -54,7 +69,12 @@ def soustraction(x, y):
 # @END@
 
 operands = [
-    Args(),
+    Args(2, 2),
+    Args(1, 3),
+    Args(5, 2),
+    Args(8, 10),
+    Args(10, 9),
+    Args(0, -1),
 ]
 
 exo_soustraction = ExerciseFunction(
