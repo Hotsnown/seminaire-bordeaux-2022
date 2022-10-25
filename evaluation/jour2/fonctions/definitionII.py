@@ -32,7 +32,7 @@ arguments = [
    Args(6),
 ]
 
-exo_max_entre_3 = ExerciseFunction(
+exo_est_pair = ExerciseFunction(
     est_pair,
     arguments
 )
