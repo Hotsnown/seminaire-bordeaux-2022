@@ -3,8 +3,8 @@ from nbautoeval import CallRenderer, PPrintRenderer
 
 # CREATE LIST
 
-def create_list(*args):
-    return args
+def create_list_3(a, b, c):
+    return [a, b, c]
 
 arguments_3 = [
     Args("a", "b", "c"),
@@ -12,9 +12,13 @@ arguments_3 = [
 ]
 
 exo_create_list_3 = ExerciseFunction(
-    create_list,
+    create_list_3,
     arguments_3,
 )
+
+def create_list_4(a, b, c, d):
+    return [a, b, c, d]
+
 
 arguments_4 = [
     Args("a", "b", "c", "d"),
@@ -22,9 +26,12 @@ arguments_4 = [
 ]
 
 exo_create_list_4 = ExerciseFunction(
-    create_list,
+    create_list_4,
     arguments_4,
 )
+
+def create_list_5(a, b, c, d, e):
+    return [a, b, c, d, e]
 
 arguments_5 = [
     Args("a", "b", "c", "d", "e"),
@@ -32,7 +39,7 @@ arguments_5 = [
 ]
 
 exo_create_list_5 = ExerciseFunction(
-    create_list,
+    create_list_5,
     arguments_5,
 )
 
