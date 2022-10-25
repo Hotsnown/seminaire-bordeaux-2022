@@ -40,21 +40,6 @@ exo_longueur_string = ExerciseFunction(
     longueur_string_arguments
 )
 
-def loop_over_string(string, fonction):
-    ret = []
-    for letter in string:
-        ret.append(fonction(letter))
-    return ret
-
-loop_over_string_arguments = [
-    Args("Demandeur", isalpha),Args("Défendeur", isdigit),Args("Partie", isalpha),Args("Ministère public (parquet)", isspace),Args("Tiers", isupper),Args("Juge", isupper),Args("Avocat", islower),Args("Greffier", islower),Args("Arbitre", isalnum),Args("Médiateur", isalnum),Args("Procureur", isupper)
-]
-
-exo_loop_over_string = ExerciseFunction(
-    loop_over_string,
-    loop_over_string_arguments
-)
-
 def in_operator(string, mots):
     return string in mots
 
