@@ -46,7 +46,7 @@ exo_create_list_5 = ExerciseFunction(
 
 # ADD LIST
 
-def add_list(list, x):
+def add_list(liste, x):
     liste.append(x)
 
     # Ne rien changer après cette ligne
@@ -97,7 +97,7 @@ def get_item(liste, x):
 arguments = [
     Args(["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 1),
     Args(["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 6),
-    Args(["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 12),
+    Args(["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 11),
 ]
 
 exo_get_item = ExerciseFunction(
@@ -113,7 +113,7 @@ def select_second(L):
         return L[1]
 
 arguments = [
-    Args(["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 1),
+    Args(["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]),
     Args([0, 1, 2, 3, 4])
 ]
 
