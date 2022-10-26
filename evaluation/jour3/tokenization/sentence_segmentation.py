@@ -17,7 +17,7 @@ arguments = [
     '''),
 ]
 
-exo_create_list = ExerciseFunction(
+exo_sent_tokenization_en = ExerciseFunction(
     sent_tokenization_en,
     arguments,
 )
@@ -35,7 +35,7 @@ arguments = [
     '''),
 ]
 
-exo_create_list = ExerciseFunction(
+exo_sent_tokenization_fr = ExerciseFunction(
     sent_tokenization_fr,
     arguments,
 )
