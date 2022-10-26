@@ -71,9 +71,9 @@ def lower(text):
 
 to_lower = [
     Args(["Canada", "CANADA", "canada", "CaNaDa"]),
-    Args("accessorium SEQUITUR principale."),
-    Args("Affirmanti Incumbit Probatio."),
-    Args("non bis in idem."),
+    Args(["accessorium", "SEQUITUR", "principale."]),
+    Args(["Affirmanti", "Incumbit", "Probatio."]),
+    Args(["non", "bis", "in", "idem."]),
     ]
 
 exo_lower = ExerciseFunction(
