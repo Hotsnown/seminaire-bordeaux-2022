@@ -6,7 +6,9 @@ def tokenize_by_space(text):
     return text.split(" ")
 
 arguments = [
-    Args("qzdqzd  qzdqzdq ")
+    Args("accessorium sequitur principale."),
+    Args("affirmanti incumbit probatio."),
+    Args("non bis in idem."),
 ]
 
 exo_tokenize_by_space = ExerciseFunction(
@@ -37,9 +39,16 @@ def tokenization_fr(text):
     return word_tokenize(text, language="french")
 
 content_french = [
-    Args("Les astronomes amateurs jouent également un rôle important en recherche; les plus sérieux participant couramment au suivi d'étoiles variables, à la découverte de nouveaux astéroïdes et de nouvelles comètes, etc."), 
-    Args('Séquence vidéo.'), 
-    Args("John Richard Bond explique le rôle de l'astronomie.")
+        Args("Article 1240"),
+        Args("Tout fait quelconque de l'homme, qui cause à autrui un dommage, oblige celui par la faute duquel il est arrivé à le réparer."),
+        Args("Article 1241"),
+        Args("Chacun est responsable du dommage qu'il a causé non seulement par son fait, mais encore par sa négligence ou par son imprudence."),
+        Args("Article 1242"),
+        Args("On est responsable non seulement du dommage que l'on cause par son propre fait, mais encore de celui qui est causé par le fait des personnes dont on doit répondre, ou des choses que l'on a sous sa garde."),
+        Args("Article 1243"),
+        Args("Le propriétaire d'un animal, ou celui qui s'en sert, pendant qu'il est à son usage, est responsable du dommage que l'animal a causé, soit que l'animal fût sous sa garde, soit qu'il fût égaré ou échappé."),
+        Args("Article 1244"),
+        Args("Le propriétaire d'un bâtiment est responsable du dommage causé par sa ruine, lorsqu'elle est arrivée par une suite du défaut d'entretien ou par le vice de sa construction."),
     ]
 
 exo_tokenize_fr = ExerciseFunction(
