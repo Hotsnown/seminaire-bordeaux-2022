@@ -74,22 +74,3 @@ exo_8 = ExerciseFunction(
     ex_8,
     arguments,
 )
-
-#
-
-from nltk.tokenize import SExprTokenizer
-
-def split_by_parenthesis(text):
-    return SExprTokenizer().tokenize(text)
-
-arguments = [
-    Args('(a b (c d)) e f (g)'),
-    Args('(a b) (c d) e (f g)'),
-    Args('[(a b (c d)) e f (g)]'),
-    Args('{a b {c d}} e f {g}')
-]
-
-exo_parenthesis = ExerciseFunction(
-    split_by_parenthesis,
-    arguments,
-)

@@ -88,5 +88,5 @@ This food only looks and tastes good, other than that, it has no positive points
 
 exo_count_without_stopword = ExerciseFunction(
     count_without_stopword,
-    arguments,
+    text,
 )

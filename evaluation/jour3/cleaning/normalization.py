@@ -66,3 +66,17 @@ exo_clean = ExerciseFunction(
     arguments,
 )
 
+def lower(text):
+    return =[word.lower() for word in text]
+
+to_lower = [
+    Args(["Canada", "CANADA", "canada", "CaNaDa"]),
+    Args("accessorium SEQUITUR principale."),
+    Args("Affirmanti Incumbit Probatio."),
+    Args("non bis in idem."),
+    ]
+
+exo_lower = ExerciseFunction(
+    lower,
+    to_lower
+)

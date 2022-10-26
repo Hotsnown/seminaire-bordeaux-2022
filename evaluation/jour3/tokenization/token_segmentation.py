@@ -30,7 +30,7 @@ arguments = [
     '''),
 ]
 
-exo_tokenize_en = ExerciseFunction(
+exo_tokenization_en = ExerciseFunction(
     tokenization_en,
     arguments,
 )
@@ -51,7 +51,7 @@ content_french = [
         Args("Le propriétaire d'un bâtiment est responsable du dommage causé par sa ruine, lorsqu'elle est arrivée par une suite du défaut d'entretien ou par le vice de sa construction."),
     ]
 
-exo_tokenize_fr = ExerciseFunction(
+exo_tokenization_fr = ExerciseFunction(
     tokenization_fr,
     content_french,
 )
