@@ -4,13 +4,12 @@ import random
 
 from sklearn import preprocessing
 
-def label_featurization(label):
+def label_featurization():
     lbl_enc = preprocessing.LabelEncoder()
-    return lbl_enc.fit_transform(["Affirm", "Reverse"])[0]
+    return lbl_enc.fit(["Affirm", "Reverse"])
 
 arguments = [
-    Args("Affirm"),
-    Args("Reverse")
+    Args(),
 ]
 
 exo_label_featurization = ExerciseFunction(
@@ -20,10 +19,13 @@ exo_label_featurization = ExerciseFunction(
 
 def labels_featurization(labels):
     lbl_enc = preprocessing.LabelEncoder()
-    return lbl_enc.fit_transform(["Affirm", "Reverse"])
+    return lbl_enc.fit_transform(labels)
 
 arguments = [
     Args(["Affirm", "Reverse"]),
+    Args(["Affirm", "Reverse", "Complex"]),
+    Args(["Gagné", "Perdu"]),
+    Args(["janvier"," février"," mars"," avril"," mai"," juin"," juillet"," août"," septembre"," octobre"," novembre"," décembre",])
 ]
 
 exo_labels_featurization = ExerciseFunction(
