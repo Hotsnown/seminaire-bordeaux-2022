@@ -42,7 +42,7 @@ arguments = [
     Args(pd.DataFrame(["Affirm", "Reverse"])),
 ]
 
-exo_labels_featurization = ExerciseFunction(
+exo_labels_featurization_pandas = ExerciseFunction(
     labels_featurization_pandas,
     arguments
 )
