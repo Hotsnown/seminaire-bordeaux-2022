@@ -35,7 +35,7 @@ exo_labels_featurization = ExerciseFunction(
 
 def labels_featurization_pandas(dataframe):
     lbl_enc = preprocessing.LabelEncoder()
-    dataframe["label_feature"] = lbl_enc.fit_transform(dataframe.label.values)
+    dataframe["label_feature"] = lbl_enc.fit_transform(dataframe["role"].values)
     return dataframe
 
 import pandas as pd
