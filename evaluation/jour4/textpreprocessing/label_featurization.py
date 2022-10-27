@@ -41,7 +41,8 @@ def labels_featurization_pandas(dataframe):
 import pandas as pd
 
 arguments = [
-    Args(pd.DataFrame(["Affirm", "Reverse"])),
+    Args(pd.DataFrame(["Affirm", "Reverse"], columns=["role"])),
+    Args(pd.read_csv("/content/seminaire/exercices/jour4/4.2 text preprocessing/labels.csv"))
 ]
 
 exo_labels_featurization_pandas = ExerciseFunction(
