@@ -195,7 +195,7 @@ argumets = [
 
 exo_common_end = ExerciseFunction(
   common_end,
-  argument
+  arguments
 )
 
 def same_first_last(nums):
@@ -215,7 +215,7 @@ arguments = [
 
 exo_same_first_last = ExerciseFunction(
   same_first_last,
-  argument
+  arguments
 )
 
 def sum3(nums):
