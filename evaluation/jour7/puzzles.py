@@ -11,7 +11,7 @@ def sleep_in(weekday, vacation):
 arguments = [
   Args(False, False),
   Args(False, True),
-  Args(True, False)
+  Args(True, False),
   Args(True, True),
 ]
 
