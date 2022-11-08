@@ -243,7 +243,7 @@ arguments = [
   Args('ABChi hi'),
   Args('hihi'),
   Args('hiHIhi'),
-  Args(('')),
+  Args(''),
   Args('h'),
   Args('hi'),
   Args('Hi is no HI on ahI'),
