@@ -166,15 +166,6 @@ exo_sum3 = ExerciseFunction(
   arguments
 )
 
-def count_code
-
-arguments = []
-
-exo_count_code = ExerciseFunction(
-  count_code,
-  arguments
-)
-
 def count_hi(str):
   return str.count("hi")
 
