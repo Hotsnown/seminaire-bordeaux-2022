@@ -8,7 +8,12 @@ def sleep_in(weekday, vacation):
     return False
   # This can be shortened to: return(not weekday or vacation)
 
-arguments = []
+arguments = [
+  Args(False, False),
+  Args(False, True),
+  Args(True, False)
+  Args(True, True),
+]
 
 exo_sleep_in = ExerciseFunction(
   sleep_in,
@@ -20,7 +25,18 @@ def missing_char(str, n):
   back = str[n+1:]  # n+1 through end of string
   return front + back
 
-arguments = []
+arguments = [
+  Args('kitten', 1),
+  Args('kitten', 0),
+  Args('kitten', 4),
+  Args('Hi', 0),
+  Args('Hi', 1),
+  Args('code', 0),
+  Args('code', 1),
+  Args('code', 2),
+  Args('code', 3),
+  Args('chocolate', 8),
+]
 
 exo_missing_char = ExerciseFunction(
   missing_char,
@@ -39,7 +55,10 @@ def monkey_trouble(a_smile, b_smile):
   ##   return (a_smile == b_smile)
 
 arguments = [
-
+  Args(True, True),
+  Args(False, False),
+  Args(True, False),
+  Args(False, True),
 ]
 
 exo_monkey_trouble = ExerciseFunction(
@@ -56,7 +75,16 @@ def front_back(str):
   # last + mid + first
   return str[len(str)-1] + mid + str[0]
 
-arguments = []
+arguments = [
+  Args('code'),
+  Args('a'),
+  Args('ab'),
+  Args('abc'),
+  Args(''),
+  Args('Chocolate'),
+  Args('aavJ'),
+  Args('hello'),
+]
 
 exo_front_back = ExerciseFunction(
   front_back,
@@ -72,7 +100,16 @@ def sum_double(a, b):
     sum = sum * 2
   return sum
 
-arguments = []
+arguments = [
+  Args(1, 2),
+  Args(3, 2),
+  Args(2, 2),
+  Args(-1, 0),
+  Args(3, 3),
+  Args(0, 0),
+  Args(0, 1),
+  Args(3, 4),
+]
 
 exo_sum_double = ExerciseFunction(
   sum_double,
@@ -82,7 +119,17 @@ exo_sum_double = ExerciseFunction(
 def makes10(a, b):
   return (a == 10 or b == 10 or a+b == 10)
 
-arguments = []
+arguments = [
+  Args(9, 10),
+  Args(9, 9),
+  Args(1, 9),
+  Args(10, 1),
+  Args(10, 10),
+  Args(8, 2),
+  Args(8, 3),
+  Args(10, 42),
+  Args(12, -2),
+]
 
 exo_makes10 = ExerciseFunction(
   makes10,
@@ -96,7 +143,15 @@ def not_string(str):
   # str[:3] goes from the start of the string up to but not
   # including index 3
 
-arguments = []
+arguments = [
+  Args('candy'),
+  Args('x'),
+  Args('not bad'),
+  Args('bad'),
+  Args('not'),
+  Args('is not'),
+  Args('no'),
+]
 
 exo_not_string = ExerciseFunction(
   not_string,
@@ -106,7 +161,21 @@ exo_not_string = ExerciseFunction(
 def first_last6(nums):
   return (nums[0]==6 or nums[-1]== 6)
 
-arguments = []
+arguments = [
+  Args([1, 2, 6]),
+  Args([6, 1, 2, 3]),
+  Args([13, 6, 1, 2, 3]),
+  Args([13, 6, 1, 2, 6]),
+  Args([3, 2, 1]),
+  Args([3, 6, 1]),
+  Args([3, 6]),
+  Args([6]),
+  Args([3]),
+  Args([5, 6]),
+  Args([5, 5]),
+  Args([1, 2, 3, 4, 6]),
+  Args([1, 2, 3, 4]),
+]
 
 exo_first_last6 = ExerciseFunction(
   first_last6,
