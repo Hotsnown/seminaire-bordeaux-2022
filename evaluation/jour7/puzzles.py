@@ -185,7 +185,7 @@ exo_first_last6 = ExerciseFunction(
 def common_end(a, b):
   return a[0] == b[0] or a[-1] == b[-1]  
 
-argumets = [
+arguments = [
   Args([1, 2, 3], [7, 3]),
   Args([1, 2, 3], [7, 3, 2]),
   Args([1, 2, 3], [1, 3]),
@@ -261,18 +261,18 @@ def big_diff(nums):
   return max_value - min_value
 
 arguments = [
-  [10, 3, 5, 6],
-  [7, 2, 10, 9],
-  [2, 10, 7, 2],
-  [2, 10],
-  [10, 2],
-  [10, 0],
-  [2, 3],
-  [2, 2],
-  [2],
-  [5, 1, 6, 1, 9, 9],
-  [7, 6, 8, 5],
-  [7, 7, 6, 8, 5, 5, 6],
+  Args([10, 3, 5, 6]),
+  Args([7, 2, 10, 9]),
+  Args([2, 10, 7, 2]),
+  Args([2, 10]),
+  Args([10, 2]),
+  Args([10, 0]),
+  Args([2, 3]),
+  Args([2, 2]),
+  Args([2]),
+  Args([5, 1, 6, 1, 9, 9],)
+  Args([7, 6, 8, 5]),
+  Args([7, 7, 6, 8, 5, 5, 6]),
 ]
 
 exo_big_diff = ExerciseFunction(
